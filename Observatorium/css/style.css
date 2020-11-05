@@ -1,0 +1,307 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Varela Round", sans-serif;
+   line-height: 1.6;
+   color: #3a3a3a;
+   background-color: #93c9a0;
+}
+
+p {
+   font-size: 0.95em;
+   margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+   color: #460958;
+}
+
+h2,
+h3,
+h4 {
+   margin-top: 0;
+}
+
+h4 {
+   margin-bottom: 0.4em;
+}
+
+a {
+   text-decoration: none;
+}
+
+img {
+   max-width: 100%;
+}
+
+figure {
+   margin: 0;
+   line-height: 0;
+   position: relative;
+}
+
+figcaption {
+   font-size: 0.9em;
+   line-height: 1.5;
+   color: rgb(39, 9, 78);
+   padding: 1em;
+   background: rgba(228, 212, 159, 0.65);
+
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+}
+
+ul {
+   padding-inline-start: 0px;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.feat-img {
+   width: 100%;
+   padding-bottom: 1%;
+   position: relative;
+}
+.name {
+   margin: 5px 5px;
+}
+
+.name a {
+   font-size: 1.05em;
+   color: rgb(163, 209, 110);
+}
+
+.main-nav {
+   margin: 18px;
+}
+
+.name a,
+.main-nav a {
+   display: block;
+   text-align: center;
+   padding-top: 18px;
+   padding-bottom: 18px;
+   padding-left: 7px;
+   padding-right: 7px;
+}
+
+.main-nav a {
+   font-size: 0.95em;
+   color: #000505;
+   text-transform: uppercase;
+}
+
+.main-nav a:hover {
+   color: #1ece27;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+   padding-top: 0.5em;
+   padding-bottom: 0.5em;
+   z-index: 1000;
+}
+
+.banner,
+.main-footer {
+   text-align: center;
+}
+
+.banner {
+   color: rgb(51, 10, 75);
+   background: #0add3f;
+   padding: 4.2em 0;
+   margin-bottom: 60px;
+}
+
+.col {
+   padding-right: 1em;
+   padding-left: 1em;
+}
+
+.main-header {
+   position: fixed;
+   background: rgb(103, 11, 126);
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+   width: 100%;
+   top: 0;
+}
+
+.main-footer {
+   position: fixed;
+   color: rgb(165, 159, 106);
+   background: rgb(103, 11, 126);
+   padding: 2em 0;
+   margin-top: 30px;
+   margin-bottom: 0px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+   width: 190px;
+   height: 190px;
+   border-radius: 50%;
+   margin-top: 390px;
+   margin-bottom: 20px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.headline {
+   margin-bottom: 0;
+}
+
+.icon-location {
+   width: 35px;
+   position: absolute;
+   top: -15px;
+   right: -15px;
+}
+
+.tertiary {
+   margin-bottom: 110px;
+}
+
+.tertiary a {
+   color: blueviolet;
+   font-weight: 2;
+}
+
+.primary {
+   margin-bottom: 90px;
+}
+
+.secondary {
+   margin-bottom: 90px;
+}
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+   body {
+      padding-top: 68px;
+   }
+
+   .main-header {
+      position: fixed;
+      background: rgb(103, 11, 126);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+      width: 100%;
+      top: 0;
+   }
+
+   .container {
+      width: 90%;
+      margin: 0 auto;
+   }
+
+   .name,
+   .col {
+      float: left;
+   }
+
+   .primary,
+   .secondary {
+      width: 50%;
+   }
+
+   .main-nav {
+      float: right;
+   }
+
+   .main-nav li {
+      float: left;
+      display: inline-block;
+      margin-left: 15px;
+   }
+
+   .tagline {
+      font-size: 1.4em;
+   }
+
+   .logo {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      margin-top: 90px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .primary {
+      margin-bottom: 90px;
+   }
+   /* ---- Float clearfix ---- */
+
+   .clearfix::after {
+      content: " ";
+      display: table;
+      clear: both;
+   }
+}
+
+@media (min-width: 1025px) {
+   .container {
+      width: 80%;
+      max-width: 1150px;
+   }
+
+   .name,
+   .col {
+      float: left;
+   }
+
+   .main-nav {
+      float: right;
+   }
+
+   .main-nav li {
+      float: left;
+      display: inline-block;
+   }
+
+   .primary {
+      width: 40%;
+   }
+
+   .secondary,
+   .tertiary {
+      width: 30%;
+   }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+   .logo {
+      animation: App-logo-spin infinite 13s linear;
+   }
+}
+
+@keyframes App-logo-spin {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
