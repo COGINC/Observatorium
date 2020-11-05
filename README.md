@@ -5,5 +5,42 @@ The website will feature a fixed Header with Navigation as well as mobile first 
 ## Custom CSS Classes
 The classes i created are:
 
-1 
+Navigation
+1 .feat-img
 
+2 .name
+
+3 .main-nav
+
+Layout COntainers
+4 .main-header
+
+5 .banner
+
+6 .col
+
+7 .main-footer
+
+8 .logo
+
+9 .headline
+
+10 .icon-location
+
+11 .tertiary
+
+12 .primary
+
+13 .secondary
+
+Inside Media Queries
+14 .container
+
+15 .tagline
+
+16 .clearfix
+
+## Custom JavaScript Functions
+The javascript functions I created are:
+
+1.
