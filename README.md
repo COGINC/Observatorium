@@ -2,50 +2,53 @@
 
 Runes of Magic Guild Website & Code Louisville Front End Project.
 
-The website will feature a fixed Header with Navigation as well as mobile first mapproach on every page and a 3 column body on some pages.
+The website will feature a fixed Footer, and Header with Navigation, as well as the Mobile First approach on every page and a 3 column body on as many pages as feasible.
 
 
 ## Custom CSS Classes
 
-The classes i created are:
+The classes I created are:
+
 
 Navigation
 
-1 .feat-img
+.name
 
-2 .name
+.main-nav
 
-3 .main-nav
 
-Layout COntainers
+Layout Containers
 
-4 .main-header
+.feat-img
 
-5 .banner
+.main-header
 
-6 .col
+.banner
 
-7 .main-footer
+.col
 
-8 .logo
+.main-footer
 
-9 .headline
+.logo
 
-10 .icon-location
+.headline
 
-11 .tertiary
+.icon-location
 
-12 .primary
+.tertiary
 
-13 .secondary
+.primary
 
-Inside Media Queries
+.secondary
 
-14 .container
 
-15 .tagline
+Inside Media Queries Only
 
-16 .clearfix
+.container
+
+.tagline
+
+.clearfix
 
 
 
@@ -53,8 +56,16 @@ Inside Media Queries
 
 The javascript functions I created are:
 
-1.
+N/A
 
-Revision 4.0
+
+
+Project Version: 1.0.1
+
+Readme Version: 4.1
+
+Author: Corey Perkinson
+
+Contact: perkinson.corey@gmail.com
 
 

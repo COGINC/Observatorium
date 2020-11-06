@@ -62,6 +62,7 @@ figcaption {
 
 ul {
    padding-inline-start: 0px;
+   border: 2px dotted black;
 }
 
 /* ================================= 
@@ -70,11 +71,11 @@ ul {
 
 /* ---- Navigation ---- */
 
-.feat-img {
-   width: 100%;
-   padding-bottom: 1%;
-   position: relative;
+.icon {
+   height: 25px;
+   width: 25px;
 }
+
 .name {
    margin: 5px 5px;
 }
@@ -88,18 +89,22 @@ ul {
    margin: 18px;
 }
 
+.main-nav li {
+   padding: 0px;
+}
+
 .name a,
 .main-nav a {
    display: block;
    text-align: center;
-   padding-top: 18px;
-   padding-bottom: 18px;
-   padding-left: 7px;
-   padding-right: 7px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 5px;
+   padding-right: 5px;
 }
 
 .main-nav a {
-   font-size: 0.95em;
+   font-size: 1em;
    color: #000505;
    text-transform: uppercase;
 }
@@ -110,10 +115,10 @@ ul {
 
 /* ---- Layout Containers ---- */
 
-.main-header {
-   padding-top: 0.5em;
-   padding-bottom: 0.5em;
-   z-index: 1000;
+.feat-img {
+   width: 100%;
+   padding-bottom: 1%;
+   position: relative;
 }
 
 .banner,
@@ -122,8 +127,8 @@ ul {
 }
 
 .banner {
-   color: rgb(51, 10, 75);
-   background: #0add3f;
+   color: #0add3f;
+   background: rgb(19, 2, 29);
    padding: 4.2em 0;
    margin-bottom: 60px;
 }
@@ -134,6 +139,9 @@ ul {
 }
 
 .main-header {
+   padding-top: 0.5em;
+   padding-bottom: 0.5em;
+   z-index: 1000;
    position: fixed;
    background: rgb(103, 11, 126);
    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
@@ -145,13 +153,21 @@ ul {
    position: fixed;
    color: rgb(165, 159, 106);
    background: rgb(103, 11, 126);
-   padding: 2em 0;
+   padding: 1em 0;
    margin-top: 30px;
    margin-bottom: 0px;
    left: 0;
    bottom: 0;
    width: 100%;
    text-align: center;
+}
+
+.main-footer a {
+   color: rgb(165, 159, 106);
+}
+
+.main-footer a:hover {
+   color: black;
 }
 
 /* ---- Page Elements ---- */
@@ -168,13 +184,6 @@ ul {
 
 .headline {
    margin-bottom: 0;
-}
-
-.icon-location {
-   width: 35px;
-   position: absolute;
-   top: -15px;
-   right: -15px;
 }
 
 .tertiary {
@@ -232,7 +241,7 @@ ul {
    .main-nav li {
       float: left;
       display: inline-block;
-      margin-left: 15px;
+      margin-left: 0px;
    }
 
    .tagline {
